@@ -1,0 +1,6 @@
+  There are basically two ways in which the data gets handled in React. It gets handled through state and props. In another way, it can be said that two types of Model in React are there to manage the data for the components. Both state and props are plain JavaScript objects.
+
+path D:\The_React_Data_Fetching_Cheatsheet_(2021) (1).pdf
+
+In a functional component in React, data handling involves using the useState and useEffect hooks to manage state and lifecycle methods respectively.
+

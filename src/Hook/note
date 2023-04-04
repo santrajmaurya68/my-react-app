@@ -1,0 +1,42 @@
+What is a Hook?
+Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+There are 3 rules for hooks:
+
+Hooks can only be called inside React function components.
+Hooks can only be called at the top level of a component.
+Hooks cannot be conditional
+
+
+Custom Hooks
+If you have stateful logic that needs to be reused in several components, you can build your own custom Hooks.
+
+React useState Hook
+The React useState Hook allows us to track state in a function component.
+
+React useeffect Hook
+The useEffect Hook allows you to perform side effects in your components.
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+useEffect accepts two arguments. The second argument is optional.
+useEffect(<function>, <dependency>)
+example of timer 'D:\Credence\Digital Crew\New folder\frontend\src\Hook\Timer.js'
+
+1. No dependency passed:
+useEffect(() => {
+  //Runs on every render
+});
+2. An empty array:
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+
+3. Props or state values:
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]);
+
+React useContext Hook
+React Context is a way to manage state globally.
+It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+
